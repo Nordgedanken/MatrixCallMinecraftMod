@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "matrix_call",
+    "name": "Matrix Call",
+    "description": "",
+    "version": "${1.0-SNAPSHOT}",
+    "mcversion": "${1.12}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "MTRNord"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
