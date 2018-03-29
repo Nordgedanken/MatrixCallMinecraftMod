@@ -1,5 +1,6 @@
 package blog.nordgedanken.matrix
 
+import blog.nordgedanken.matrix.audio.Magic
 import blog.nordgedanken.matrix.audio.Magic.startMagic
 import kotlinx.coroutines.experimental.launch
 import net.minecraftforge.event.world.WorldEvent
@@ -13,6 +14,12 @@ open class WorldUtil {
             launch {
                 startMagic()
             }
+        }
+    }
+    @SubscribeEvent
+    fun onWorldUnloadEvent(event: WorldEvent.Unload) {
+        if (event.world.isRemote) {
+            Magic.stop = true
         }
     }
 }

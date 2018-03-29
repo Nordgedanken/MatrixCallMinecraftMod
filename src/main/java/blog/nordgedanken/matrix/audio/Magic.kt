@@ -14,6 +14,7 @@ import javax.sound.sampled.Mixer
 object Magic {
     var selectedTarget: String = ""
     var selectedSource: String = ""
+    var stop = false
 
     private fun getAudioFormat(): AudioFormat {
         val sampleRate = 44100.0f
@@ -101,7 +102,9 @@ object Magic {
                     if (sourceLine != null && numBytesRead != null){
                         sourceLine.write(targetData, 0, numBytesRead)
                     }
-
+                    if (stop) {
+                        break
+                    }
                 }
             }
 
