@@ -11,6 +11,9 @@ import javax.sound.sampled.Mixer
 
 
 object Magic {
+    var selectedTarget: String = ""
+    var selectedSource: String = ""
+
     private fun getAudioFormat(): AudioFormat {
         val sampleRate = 44100.0f
         val sampleSizeInBits = 16
@@ -35,7 +38,11 @@ object Magic {
             val TlineInfos = mixer.targetLineInfo
             val SlineInfos = mixer.sourceLineInfo
             if (TlineInfos.isNotEmpty() && TlineInfos[0].lineClass == TargetDataLine::class.java) {
-                //TODO check for device name the user decided to use. For now I use the primary
+                // Check if Target is selected and if it doesn't match with the current device we skip it.
+                if (selectedTarget != "" && selectedTarget != mixerInfo[cnt].name) {
+                    continue
+                }
+                // Skip any further devices if we have one found.
                 if (targetLine != null) {
                     continue
                 }
@@ -44,7 +51,11 @@ object Magic {
                 Logger.info("Mic is supported!")
             }
             if (SlineInfos.isNotEmpty() && SlineInfos[0].lineClass == SourceDataLine::class.java) {
-                //TODO check for device name the user decided to use. For now I use the primary
+                // Check if Source is selected and if it doesn't match with the current device we skip it.
+                if (selectedSource != "" && selectedSource != mixerInfo[cnt].name) {
+                    continue
+                }
+                // Skip any further devices if we have one found.
                 if (sourceLine != null) {
                     continue
                 }
