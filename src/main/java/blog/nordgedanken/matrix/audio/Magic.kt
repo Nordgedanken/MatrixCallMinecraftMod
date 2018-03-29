@@ -1,6 +1,7 @@
 package blog.nordgedanken.matrix.audio
 
 import blog.nordgedanken.matrix.Logger
+import blog.nordgedanken.matrix.client.ModConfig
 import javax.sound.sampled.AudioFormat
 import javax.sound.sampled.AudioSystem
 import javax.sound.sampled.DataLine
@@ -24,6 +25,10 @@ object Magic {
     }
 
     fun startMagic() {
+        if (!ModConfig.sound.autoConfigureChannels) {
+            selectedTarget = ModConfig.sound.TargetChannel
+            selectedSource = ModConfig.sound.SourceChannel
+        }
         val mixerInfo = AudioSystem.getMixerInfo()    //get available mixers
         val audioFormat = getAudioFormat()     //get the audio format
         println("Available mixers:")
