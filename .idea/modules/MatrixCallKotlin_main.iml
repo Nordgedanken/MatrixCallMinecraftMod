@@ -35,16 +35,16 @@
   <component name="McpModuleSettings">
     <option name="mappingFiles">
       <set>
-        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20180311\1.12\srgs\srg.exc" />
-        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20180311\1.12\srgs\mcp.exc" />
-        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20180311\1.12\srgs\notch-mcp.srg" />
-        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20180311\1.12\srgs\mcp-srg.srg" />
-        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20180311\1.12\srgs\mcp-notch.srg" />
-        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20180311\1.12\srgs\notch-srg.srg" />
+        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\mcp-notch.srg" />
+        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\mcp-srg.srg" />
+        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\notch-mcp.srg" />
+        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg.exc" />
+        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\mcp.exc" />
+        <option value="C:\Users\marce\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\notch-srg.srg" />
       </set>
     </option>
-    <option name="mcpVersion" value="snapshot_20180311" />
-    <option name="minecraftVersion" value="1.12" />
+    <option name="mcpVersion" value="snapshot_20171003" />
+    <option name="minecraftVersion" value="1.12.2" />
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
     <exclude-output />
@@ -86,11 +86,11 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12-14.21.1.2387/snapshot/20180311/forgeSrc-1.12-14.21.1.2387.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.2.2641/snapshot/20171003/forgeSrc-1.12.2-14.23.2.2641.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12-14.21.1.2387/snapshot/20180311/forgeSrc-1.12-14.21.1.2387-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.2.2641/snapshot/20171003/forgeSrc-1.12.2-14.23.2.2641-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -109,7 +109,7 @@
     <orderEntry type="library" name="Gradle: com.google.guava:guava:21.0" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.5" level="project" />
     <orderEntry type="library" name="Gradle: commons-io:commons-io:2.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.mojang:realms:1.10.17" level="project" />
+    <orderEntry type="library" name="Gradle: com.mojang:realms:1.10.19" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.3.3" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="Gradle: com.paulscode:librarylwjglopenal:20100824" level="project" />
@@ -155,7 +155,7 @@
     <orderEntry type="module-library" scope="RUNTIME">
       <library>
         <CLASSES>
-          <root url="file://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12-14.21.1.2387/start" />
+          <root url="file://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.2.2641/start" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
